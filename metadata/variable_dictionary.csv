@@ -1,0 +1,11 @@
+variable,stage,model_role,description,unit,processing
+dmu,Both,Identifier,Country or healthcare-system identifier,ISO-style code,Unique and non-missing
+exp,Stage 1,Discretionary radial input,Public and mandatory health expenditure per capita,USD PPP per capita constant prices,Use harmonised analysis-year value
+hospbeds,Stage 1,Discretionary radial input,Hospital beds per 1000 population,Per 1000 population,Use harmonised analysis-year value
+GPs,Stage 1,Discretionary radial input,General practitioners per 1000 population,Per 1000 population,Use harmonised analysis-year value
+epa_inv,Stage 1,Discretionary radial input,Linearly inverted digital-health infrastructure index,Transformed index,max(original) - original + 1
+diab,Stage 1 to Stage 2,Undesirable endogenous intermediate,Avoidable diabetes-related hospital admissions,Per 100000 population,Original scale; not inverted
+beddays_imp,Stage 2,Discretionary radial input,Inpatient hospital days per person per year,Days per population,Use documented imputation where applicable
+consult_imp,Stage 2,Discretionary radial input,Physician consultations per capita per year,Visits per capita,Use documented imputation where applicable
+treatmort_inv,Stage 2,Desirable final output,Linearly inverted treatable mortality,Transformed rate,max(original) - original + 1
+SAH,Stage 2,Desirable final output,Lowest-income-quintile respondents reporting very good or excellent health,Percent,Original harmonised value
