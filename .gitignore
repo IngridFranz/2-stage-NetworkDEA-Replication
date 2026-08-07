@@ -1,0 +1,7 @@
+data/analysis_data.csv
+data/context_data.csv
+results/
+.Rhistory
+.RData
+.Rproj.user/
+.r-library/
