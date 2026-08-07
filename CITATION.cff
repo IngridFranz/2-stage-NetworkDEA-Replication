@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Franz"
     given-names: "Ingrid"
-version: 2.0.0
+version: 2.0.1
 date-released: 2026-08-07
 license: MIT
 repository-code: "https://github.com/IngridFranz/2-stage-NetworkDEA-Replication"

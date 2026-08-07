@@ -1,6 +1,6 @@
 # Two-stage network DEA and contextual analyses: replication code
 
-Version 2.0.0 provides one continuous R workflow for the final input-oriented
+Version 2.0.1 provides one continuous R workflow for the final input-oriented
 VRS network DEA and the sensitivity, cluster, and exploratory contextual
 analyses reported in the revised manuscript.
 
