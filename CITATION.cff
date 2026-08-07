@@ -9,4 +9,12 @@ version: 2.0.1
 date-released: 2026-08-07
 license: MIT
 repository-code: "https://github.com/IngridFranz/2-stage-NetworkDEA-Replication"
+doi: "10.5281/zenodo.21843195"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21843195"
+    description: "Version-specific archived software release"
+  - type: doi
+    value: "10.5281/zenodo.21802340"
+    description: "Concept DOI for all repository versions"
 abstract: "R workflow for the final VRS network DEA, prespecified DEA sensitivity analyses, cluster analysis, Kruskal-Wallis comparisons, and exploratory fractional-logit models."
