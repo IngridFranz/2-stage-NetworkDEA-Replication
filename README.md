@@ -1,5 +1,5 @@
 # Two-stage network DEA and contextual analyses: replication code
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21843195.svg)](https://doi.org/10.5281/zenodo.21843195)
 Version 2.0.1 provides one continuous R workflow for the final input-oriented
 VRS network DEA and the sensitivity, cluster, and exploratory contextual
 analyses reported in the revised manuscript.
@@ -83,10 +83,13 @@ The integrated workflow was tested with R 4.4.1, `lpSolve` 5.6-23, and
 
 ## Citation
 
-The software author and GitHub repository are recorded in `CITATION.cff`.
-Add the associated article citation and the new version-specific Zenodo DOI
-after they become available. Cite the version-specific Zenodo record when
-referring to the exact submitted code.
+Franz I. Reproduction of a two-stage network DEA and contextual analyses.
+Version 2.0.1 [software]. Zenodo; 2026.
+https://doi.org/10.5281/zenodo.21843195
+
+Use the version-specific DOI above when citing the exact submitted code. The
+concept DOI for navigation across all archived versions is
+https://doi.org/10.5281/zenodo.21802340. 
 
 ## Licence
 
