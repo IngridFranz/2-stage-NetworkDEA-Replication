@@ -2,7 +2,7 @@
 
 ## 2.0.0 - 2026-08-07
 
-- Integrated the bounded input-oriented VRS network DEA with the complete
+- Integrated the final bounded input-oriented VRS network DEA with the complete
   cluster and exploratory contextual workflow.
 - Added CRS, alternative-stage-weight, targeted-variable-exclusion, and
   leave-one-country-out DEA sensitivity analyses.

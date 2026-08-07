@@ -1,6 +1,6 @@
 # Two-stage network DEA and contextual analyses: replication code
 
-Version 2.1.0 provides one continuous R workflow for the final input-oriented
+Version 2.0.0 provides one continuous R workflow for the final input-oriented
 VRS network DEA and the sensitivity, cluster, and exploratory contextual
 analyses reported in the revised manuscript.
 
@@ -83,9 +83,10 @@ The integrated workflow was tested with R 4.4.1, `lpSolve` 5.6-23, and
 
 ## Citation
 
-Before publication, replace the placeholders in `CITATION.cff` with the author
-names, GitHub URL, associated article citation, and Zenodo DOI. Cite the
-version-specific Zenodo record when referring to the exact submitted code.
+The software author and GitHub repository are recorded in `CITATION.cff`.
+Add the associated article citation and the new version-specific Zenodo DOI
+after they become available. Cite the version-specific Zenodo record when
+referring to the exact submitted code.
 
 ## Licence
 
