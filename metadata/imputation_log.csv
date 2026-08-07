@@ -1,0 +1,3 @@
+file,dmu,country,variable,method,numerical_value_redistributed,documentation_source
+analysis_data.csv,GB,United Kingdom,consult_imp,Arithmetic mean across countries with available values,No,Supplementary Table 1
+analysis_data.csv,IE,Ireland,beddays_imp,Arithmetic mean across countries with available values,No,Supplementary Table 1

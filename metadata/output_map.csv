@@ -1,0 +1,25 @@
+reporting_element,generated_file
+Final VRS efficiency scores,results/01_network_dea/endogenous_link_vrs_efficiency.csv
+DEA diagnostics,results/01_network_dea/endogenous_link_vrs_diagnostics.csv
+Stage 1 peer weights,results/01_network_dea/endogenous_link_vrs_peers_stage1.csv
+Stage 2 peer weights,results/01_network_dea/endogenous_link_vrs_peers_stage2.csv
+Projected targets,results/01_network_dea/endogenous_link_vrs_targets.csv
+DEA sensitivity summary,results/01b_dea_sensitivity/01_specification_summary.csv
+DEA sensitivity country results,results/01b_dea_sensitivity/02_all_efficiency_results.csv
+DEA sensitivity diagnostics,results/01b_dea_sensitivity/03_all_diagnostics.csv
+Leave-one-country-out results,results/01b_dea_sensitivity/04_leave_one_out_all_results.csv
+Leave-one-country-out summary,results/01b_dea_sensitivity/05_leave_one_out_summary.csv
+Cluster-selection criteria,results/02_cluster_context/03_cluster_selection_criteria.csv
+Country assignments and silhouettes,results/02_cluster_context/04_country_assignments_silhouettes.csv
+Primary four-cluster assignments,results/02_cluster_context/05_primary_four_cluster_assignments.csv
+Cluster sensitivity ARI,results/02_cluster_context/06_assignment_stability_ari.csv
+Supplementary Figure 1 PDF,results/02_cluster_context/07a_supplementary_primary_dendrogram.pdf
+Supplementary Figure 1 PNG,results/02_cluster_context/07a_supplementary_primary_dendrogram.png
+Kruskal-Wallis comparisons,results/02_cluster_context/11_kruskal_wallis_dea_variables.csv
+Cluster predictive margins,results/02_cluster_context/20_cluster_predictive_margins.csv
+Cluster omnibus Wald tests,results/02_cluster_context/21_cluster_global_wald_tests.csv
+Cluster pairwise contrasts,results/02_cluster_context/22_cluster_pairwise_contrasts.csv
+Health-system-type predictive margins,results/02_cluster_context/23_hcs_predictive_margins.csv
+Health-system-type omnibus Wald tests,results/02_cluster_context/24_hcs_global_wald_tests.csv
+Health-system-type pairwise contrasts,results/02_cluster_context/25_hcs_pairwise_contrasts.csv
+Continuous-indicator AMEs,results/02_cluster_context/26_continuous_indicator_average_marginal_effects.csv

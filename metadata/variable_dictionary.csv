@@ -1,11 +1,22 @@
-variable,stage,model_role,description,unit,processing
-dmu,Both,Identifier,Country or healthcare-system identifier,ISO-style code,Unique and non-missing
-exp,Stage 1,Discretionary radial input,Public and mandatory health expenditure per capita,USD PPP per capita constant prices,Use harmonised analysis-year value
-hospbeds,Stage 1,Discretionary radial input,Hospital beds per 1000 population,Per 1000 population,Use harmonised analysis-year value
-GPs,Stage 1,Discretionary radial input,General practitioners per 1000 population,Per 1000 population,Use harmonised analysis-year value
-epa_inv,Stage 1,Discretionary radial input,Linearly inverted digital-health infrastructure index,Transformed index,max(original) - original + 1
-diab,Stage 1 to Stage 2,Undesirable endogenous intermediate,Avoidable diabetes-related hospital admissions,Per 100000 population,Original scale; not inverted
-beddays_imp,Stage 2,Discretionary radial input,Inpatient hospital days per person per year,Days per population,Use documented imputation where applicable
-consult_imp,Stage 2,Discretionary radial input,Physician consultations per capita per year,Visits per capita,Use documented imputation where applicable
-treatmort_inv,Stage 2,Desirable final output,Linearly inverted treatable mortality,Transformed rate,max(original) - original + 1
-SAH,Stage 2,Desirable final output,Lowest-income-quintile respondents reporting very good or excellent health,Percent,Original harmonised value
+file,variable,definition_or_role,unit_or_scale
+analysis_data.csv,dmu,Two-letter study identifier,text
+analysis_data.csv,exp,Public and mandatory health expenditure per capita,constant PPP-adjusted USD per capita
+analysis_data.csv,hospbeds,Hospital-bed density,per 1000 population
+analysis_data.csv,GPs,General-practitioner density,per 1000 population
+analysis_data.csv,epa,Digital-health infrastructure index in original direction,index 0 to 100
+analysis_data.csv,epa_inv,Linearly inverted digital-health index,max(epa)-epa+1
+analysis_data.csv,diab,Avoidable diabetes-related hospital admissions,per 100000 population
+analysis_data.csv,beddays_imp,Inpatient bed-days,days per capita
+analysis_data.csv,consult_imp,Physician consultations,visits per capita
+analysis_data.csv,treatmort,Treatable mortality in original direction,per 100000 population
+analysis_data.csv,treatmort_inv,Linearly inverted treatable mortality,max(treatmort)-treatmort+1
+analysis_data.csv,SAH,Very good or excellent self-assessed health in lowest income quintile,percent
+context_data.csv,country,Country name,text
+context_data.csv,dmu,Two-letter study identifier,text
+context_data.csv,elderly_pop,Population aged 65 years or older,percent
+context_data.csv,gini,Gini coefficient,0 to 1
+context_data.csv,rural_pop,Population living in rural areas,percent
+context_data.csv,gdp_cap,GDP per capita PPP adjusted,USD PPP
+context_data.csv,prev_index,Composite prevention-policy index,0 to 100
+context_data.csv,hcs_type,Health-system type according to the manuscript,nominal codes 1 to 5
+

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived repository version and the associated article."
+title: "Reproduction of a two-stage network DEA and contextual analyses"
+type: software
+authors:
+  - name: Ingrid Franz
+  - ORCID:0009-0003-7345-023X 
+version: 2.0.0
+date-released: 2026-08-07
+license: MIT
+repository-code: https://github.com/IngridFranz/2-stage-NetworkDEA-Replication
+abstract: "R workflow for the final VRS network DEA, prespecified DEA sensitivity analyses, cluster analysis, Kruskal-Wallis comparisons, and exploratory fractional-logit models."

@@ -1,0 +1,13 @@
+# Recreate only Supplementary Figure 1 after a successful run_all.R execution.
+options(stringsAsFactors = FALSE)
+repo_root <- normalizePath(getwd(), winslash = "/", mustWork = TRUE)
+source(file.path(repo_root, "R", "utils.R"))
+source(file.path(repo_root, "R", "cluster_analysis.R"))
+source(file.path(repo_root, "R", "create_dendrogram.R"))
+context <- read_csv_strict(file.path(repo_root, "data", "context_data.csv"))
+validate_context(context)
+out <- file.path(repo_root, "results", "02_cluster_context")
+dir.create(out, recursive = TRUE, showWarnings = FALSE)
+fit <- run_cluster_analysis(context, out)
+create_primary_dendrogram(fit, out)
+message("Supplementary dendrogram written to: ", normalizePath(out))

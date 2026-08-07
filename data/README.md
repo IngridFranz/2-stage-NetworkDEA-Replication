@@ -1,20 +1,24 @@
-# Analysis data
+# Analytic input files
 
-The source data are not redistributed in this repository. They originate from
-the OECD and the additional sources cited in the manuscript and may be subject
-to their respective access and reuse conditions.
+The repository does not redistribute source data. Retrieve the indicators from
+the sources reported in the manuscript and Supplementary Tables 1 and 2, then
+construct the following UTF-8 comma-separated files using the supplied
+templates and `metadata/data_construction_protocol.csv`.
 
-Create `analysis_data.csv` in this directory using the columns in
-`input_template.csv`. Definitions are provided in
-`../metadata/variable_dictionary.csv`. The file must contain one row per
-healthcare system and no missing values.
+## `analysis_data.csv`
 
-The file must represent the harmonised model input after the transformations
-and imputations reported in the manuscript:
+Contains the variables required for the final network DEA and original scales
+used in reporting. `epa_inv` and `treatmort_inv` must equal
+`max(x) - x + 1`. The workflow verifies both transformations.
 
-- `epa_inv = max(epa_original) - epa_original + 1`;
-- `treatmort_inv = max(treatmort_original) - treatmort_original + 1`;
-- documented imputed values enter `beddays_imp` and `consult_imp`.
+## `context_data.csv`
 
-Do not commit `analysis_data.csv` unless redistribution is permitted by the
-source licences and the journal's data-sharing policy.
+Contains the five continuous contextual indicators and health-system type.
+Health-system type is treated explicitly as nominal in the Gower dissimilarity.
+
+Both files must contain the same 30 unique two-letter `dmu` identifiers. Blank
+cells are not permitted in the final analytic files. Values described as
+imputed in Supplementary Table 1 must be entered after applying the documented
+mean-imputation rule. Exact numerical reproduction requires the same source
+vintages, reference periods, harmonisation decisions, and imputed values used
+for the article.
